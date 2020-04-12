@@ -1,0 +1,80 @@
+<!--pages/demo01/demo01.wxml-->
+
+<!-- 
+  相当于以前 div 标签
+ -->
+<!-- 1 字符串 -->
+<view>{{message}}</view>
+
+<!-- 2 数字类型 -->
+<view>{{num}}</view>
+
+<!-- 3 布尔类型 -->
+<view>是男是女{{isGirl}}</view>
+
+<!-- 4 object 类型 -->
+<view>{{person}}</view>
+<view>{{person.age}}</view>
+<view>{{person.height}}</view>
+<view>{{person.name}}</view>
+
+<!-- 5 在标签的属性中使用 
+data-number 
+data-aad
+是我们随便写的一个自定义的属性
+-->
+<view data-number="{{num}}">自定义属性</view>
+<view data-aad="{{num}}">自定义属性</view>
+
+<!-- 6 使用bool类型充当属性 checked
+      字符串和{{}} 之间不要有空格，否则会导致识别失败
+      " {{}}"   ----这个不要有空格
+ -->
+<view>
+  <!-- 不写就默认勾选上了 -->
+	<checkbox checked></checkbox>
+
+  <!-- 值 checked 表示勾选 -->
+  <checkbox checked="checked"></checkbox>
+
+  <!-- {{isChecked}} 表示data中的数据 --> 
+  <checkbox checked="{{isChecked}}"></checkbox>
+  <!-- 有空格，识别失败 -->
+  <checkbox checked=" {{isChecked}}"></checkbox>
+
+  <checkbox checked="{{checkedStr}}"></checkbox>
+  <!-- 有空格，识别失败 -->
+  <checkbox checked="{{checkedStr}}"></checkbox>
+
+</view>
+
+
+<!-- 
+  7 运算
+  1 可以在花括号中加入 表达式
+  但是不能加语句
+
+  2 表达式
+    指的是一些简单的运算，数字运算、字符串拼接、逻辑运算...
+    1 数字的加减
+    2 字符串的拼接
+    3 三元表达式
+ 3 语句
+   1 复杂的代码段
+     1 if else
+     2 switch
+     3 do while 
+     4 for
+ -->
+
+ <view>{{1+1}}</view>
+ <view>{{"1"+"1"}}</view>
+ 
+ <view>{{'a' + 'b'}}</view>
+ <view>{{a + b}} + {{c}} + d</view>
+
+
+ <view>{{11%2 === 0 ? "偶数" : "奇数"}}</view>
+
+ <view hidden="{{flag ? true : false}}">Hidden</view>
+ 
