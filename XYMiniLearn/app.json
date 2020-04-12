@@ -1,6 +1,9 @@
 {
   "pages":[
+    "pages/14-运算/14",
+
     "pages/13-数据绑定/13",
+
     "pages/index/index",
     "pages/logs/logs"
   ],
