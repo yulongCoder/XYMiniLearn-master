@@ -1,0 +1,66 @@
+<view>28-navigator导航标签</view>
+
+<!-- 
+  导航组件   navigator
+  0 块级元素，默认会换行，可以直接加宽度和高度
+  1 url 要跳转页面的路径，可以是绝对路径，也可以是相对路径。
+  绝对路径也是指的是pages下面的，比如：/pages/27-swiper-常见属性/27
+
+  2 target 在哪个目标上发生跳转，默认当前小程序	，就是说在自己当前小程序跳转（不写默认self），还是跳到其他小程序的页面（miniProgram）
+  
+  3 open-type	跳转方式	
+值	说明	最低版本
+navigate	对应 wx.navigateTo 或 wx.navigateToMiniProgram 的功能	
+（保留当前页面，跳转到应用内的某个页面，但是不能跳转到 tabBar页面）
+这个也是默认值。
+
+redirect	对应 wx.redirectTo 的功能	
+（关闭当前页面，跳转到应用内的某个页面，但是不允许跳转到tabBar页面）
+
+switchTab	对应 wx.switchTab 的功能	
+（跳转到tabBar页面，并关闭其他所有非 tabBar页面）
+
+reLaunch	对应 wx.reLaunch 的功能	1.1.0
+（关闭所有页面，打开到应用内的某个页面）
+
+navigateBack	对应 wx.navigateBack 的功能	1.1.0
+（关闭当前页面，返回上一页面或多级页面，可以通过 getCurrentPage()获取当前页面栈，决定需要返回几层 ）
+
+exit	退出小程序，target="miniProgram"时生效
+退出的是其他的小程序，不是自己的小程序。
+
+ -->
+<navigator url="/pages/27-swiper-常见属性/27">跳到27-swiper-常见属性</navigator>
+
+
+<view>---------------</view>
+<!-- 
+    redirect	对应 wx.redirectTo 的功能	
+  （关闭当前页面，跳转到应用内的某个页面，但是不允许跳转到tabBar页面） -->
+<navigator open-type="redirect" url="/pages/27-swiper-常见属性/27">跳到27-swiper-常见属性</navigator>
+
+<view>---------------</view>
+<!-- 
+"pages/tabBar/index/index"   这个是要带tabBar的
+  switchTab	对应 wx.switchTab 的功能	
+  （跳转到tabBar页面，并关闭其他所有非 tabBar页面）
+ -->
+ <navigator open-type="switchTab" url="pages/tabBar/index/index">直接跳转到tabBar页面</navigator>
+
+
+ <view>---------------</view>
+ <!-- 
+reLaunch	对应 wx.reLaunch 的功能	1.1.0
+（关闭所有页面，打开到应用内的某个页面）
+ -->
+ <navigator open-type="reLaunch" url="/pages/27-swiper-常见属性/27">关闭其他所有的页面，跳到27-swiper-常见属性</navigator>
+
+
+<!-- 
+
+navigateBack	对应 wx.navigateBack 的功能	1.1.0
+（关闭当前页面，返回上一页面或多级页面，可以通过 getCurrentPage()获取当前页面栈，决定需要返回几层 ）
+
+exit	退出小程序，target="miniProgram"时生效
+ -->
+<navigator open-type="navigateBack">相当于返回键</navigator>

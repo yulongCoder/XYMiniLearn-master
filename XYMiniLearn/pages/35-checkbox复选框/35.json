@@ -1,0 +1,8 @@
+{
+  "usingComponents": {},
+  "navigationBarBackgroundColor": "#009900",
+  "navigationBarTextStyle": "black",
+  "navigationBarTitleText": "35-checkbox复选框",
+  "backgroundColor": "#eeeeee",
+  "backgroundTextStyle": "dark"
+}

@@ -1,0 +1,31 @@
+
+<view>30</view>
+<view>---------------------</view>
+
+<!-- 
+size 控制按钮的大小
+size 的合法值：default mini
+ -->
+<button>按钮</button>
+<button size="default">按钮</button>
+<button size="mini">按钮</button>
+<view>---------------------</view>
+
+<!-- 
+  type有：
+    default 背景灰色，文字绿色
+    primary 背景绿色，文字白色
+    warn 背景灰色，文字红色
+ -->
+<button type="warn">按钮2</button>
+
+<!-- 
+  plain，按钮是否镂空，背景色透明	
+ -->
+<button type="warn" plain>plain按钮</button>
+
+<!-- 
+  loading
+  名称前是否带 loading 图标	
+ -->
+ <button type="warn" plain loading>loading按钮</button>

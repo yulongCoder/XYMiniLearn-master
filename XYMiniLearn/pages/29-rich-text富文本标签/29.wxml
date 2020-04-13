@@ -1,0 +1,21 @@
+<!-- 
+  rich-text 富文本标签
+  1 nodes 属性来实现
+    接收标签字符串
+    接收对象数组
+ -->
+
+
+<!-- 
+  接收对象数组
+  不是很直观，不常用
+ -->
+ <rich-text nodes="{{htmlArray}}"></rich-text>
+
+<view>-----------------</view>
+ <!-- 
+   接收标签字符串
+   直观的，常用的
+ -->
+ <rich-text nodes="{{html}}"></rich-text>
+

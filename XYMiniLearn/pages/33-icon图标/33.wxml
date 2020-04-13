@@ -1,0 +1,29 @@
+<!-- 
+
+1 type
+icon的类型，有效值：
+success, 
+success_no_circle, info, warn,
+waiting, cancel, download, search, clear	
+
+2 size 
+表示icon的大小，number/string类型，默认23，
+
+3 color
+icon的颜色，同css的color	
+
+ -->
+<icon type="success" color="green"></icon>
+<icon type="success_no_circle" color="green"></icon>
+<icon type="info" color="green"></icon>
+<icon type="warn" color="green"></icon>
+<icon type="waiting" color="green"></icon>
+<icon type="cancel" color="green"></icon>
+<icon type="download" color="green"></icon>
+<icon type="search" color="green"></icon>
+<icon type="clear" color="green"></icon>
+
+
+
+ <icon type="success" color="red"></icon>
+ <icon type="success_no_circle" color="red" size="40"></icon>

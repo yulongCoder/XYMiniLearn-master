@@ -1,0 +1,63 @@
+
+<view>31-button的开放能力1</view>
+<view>---------------------</view>
+
+<!-- 
+
+  open-type	
+  微信开放能力	
+
+
+  值	说明	最低版本
+contact	打开客服会话，如果用户在会话中点击消息卡片后返回小程序，可以从 bindcontact 回调中获得具体信息，具体说明	1.1.0
+share	触发用户转发，使用前建议先阅读使用指引	1.2.0
+getPhoneNumber	获取用户手机号，可以从bindgetphonenumber回调中获取到用户信息，具体说明	1.2.0
+getUserInfo	获取用户信息，可以从bindgetuserinfo回调中获取到用户信息	1.3.0
+launchApp	打开APP，可以通过app-parameter属性设定向APP传的参数具体说明	1.9.5
+openSetting	打开授权设置页	2.0.7
+feedback	打开“意见反馈”页面，用户可提交反馈内容并上传日志，开发者可以登录小程序管理后台后进入左侧菜单“客服反馈”页面获取到反馈内容
+
+ -->
+
+
+<!-- 打开客服对话，需要在微信app中 -->
+<button open-type="contact">contact打开客服会话</button>
+
+<!-- 转发当前小程序到微信朋友中，不能分享到朋友圈 -->
+<button open-type="share">share</button>
+
+<!-- 获取你的手机号
+    结合一个事件来使用，不是企业的小程序账号，没有权限来获取用户的手机号
+    1 绑定一个事件 bindgetphonenumber
+    2 在事件的回调函数中，通过参数来获取信息
+    3 获取到的信息，已经加密过了，需要用户自己搭建小程序的后台服务器，在后台服务器中进行解析手机号码。
+    在返回到小程序中展示该手机号。
+ -->
+<button open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber">getPhoneNumber</button>
+
+<!-- 获取个人信息 
+  和上面获取手机号差不多，可以直接获取，不存在加密字段
+-->
+<button open-type="getUserInfo" bindgetuserinfo="getUserInfo">getUserInfo</button>
+
+<!-- launchApp 在小程序中 直接打开APP 
+     需要先在 app 中通过app的某个链接打开小程序，
+     然后再在小程序中通过这个功能重新打开app。
+     找到京东的app和京东的小程序。
+-->
+<button open-type="launchApp">launchApp</button>
+
+<!-- 打开小程序内置的授权页面 
+     授权页面中只会出现曾经授权过的。
+-->
+<button open-type="openSetting">openSetting</button>
+
+<!-- 小程序内置的反馈页面 
+     只能通过真机打开
+-->
+<button open-type="feedback">feedback</button>
+
+
+
+
+
