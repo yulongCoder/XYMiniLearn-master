@@ -23,7 +23,25 @@ icon的颜色，同css的color
 <icon type="search" color="green"></icon>
 <icon type="clear" color="green"></icon>
 
-
-
  <icon type="success" color="red"></icon>
  <icon type="success_no_circle" color="red" size="40"></icon>
+
+
+<view>-------下面是循环----------</view>
+
+
+<view class="group">
+  <block wx:for="{{iconSize}}">
+    <icon type="success" size="{{item}}"/>
+  </block>
+</view>
+<view class="group">
+  <block wx:for="{{iconType}}">
+    <icon type="{{item}}" size="40"/>
+  </block>
+</view>
+<view class="group">
+  <block wx:for="{{iconColor}}">
+    <icon type="success" size="40" color="{{item}}"/>
+  </block>
+</view>
