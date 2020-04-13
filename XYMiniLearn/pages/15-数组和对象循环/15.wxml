@@ -1,10 +1,7 @@
 <view>
 	<!-- 
   8 列表循环
-  8.1 
-  wx:for="{{数组或者对象}}"
-  wx:for-item="循环项的名称"
-  wx:for-index="循环项的索引"
+  8.1 wx:for="{{数组或者对象}}" wx:for-item="循环项的名称" wx:for-index="循环项的索引"
 
   8.2 wx:key="唯一的值", 用来提高列表渲染的性能
       8.2.1 wx:key 绑定一个普通字符串的时候，那么这个字符串的名称是数组中的对象的唯一属性
@@ -22,12 +19,27 @@
   9.2 循环对象的时候，最好把 item 和 index 的名称都修改一下，名称易读
       wx:for="{{对象}}" wx:for-item="value" wx:for-index="key"
  -->
-	<view>-------------------------------</view>
+	
+	
+	
+	<view>----------------1---------------</view>
+
+	<!-- 8.1 wx:for="{{数组或者对象}}" wx:for-item="循环项的名称" wx:for-index="循环项的索引" 
+	wx:key="id" ，这个id值唯一，不会重复。
+	-->
 	<view>数组循环</view>
 	<view wx:for="{{list}}" wx:for-item="item" wx:for-index="index" wx:key="id">
 		索引==={{index}},
 		值==={{item.name}},
 		id==={{item.id}}
+	</view>
+
+	<view>----------------2---------------</view>
+		<view wx:for="{{list}}" wx:for-item="item" wx:for-index="index" wx:key="*this">
+		索引==={{index}},
+		值==={{item.name}},
+		id==={{item.id}},
+		this===={{this}}
 	</view>
 </view>
 
