@@ -1,0 +1,20 @@
+<view>{{aaa}}</view>
+<view>{{tabArray}}</view>
+<view>-------------------------------</view>
+
+
+<view class="tabs">
+	<view class="tabs_title">
+		
+		<!-- <view class="title_item active">首页</view>
+    <view class="title_item">原创</view>
+    <view class="title_item">分类</view>
+    <view class="title_item">关于</view> -->
+		<!-- 这种是数据写死了，我们要写成绑定数据的 -->
+
+		<view wx:for="{{tabArray}}" wx:key="id" class="title_item {{item.isActive ? 'active' : ''}}" data-index="{{index}}" bindtap="handleItemTap">
+			{{item.name}}
+		</view>
+	</view>
+	<view class="tabs_content">内容</view>
+</view>

@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+    "Tabs": "components/Tabs/Tabs"
+  },
+  "navigationBarBackgroundColor": "#009900",
+  "navigationBarTextStyle": "black",
+  "navigationBarTitleText": "41-自定义组件-子向父传递数据",
+  "backgroundColor": "#eeeeee",
+  "backgroundTextStyle": "dark"
+}

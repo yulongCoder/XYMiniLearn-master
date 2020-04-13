@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+    "Tabs": "components/Tabs/Tabs"
+  },
+  "navigationBarBackgroundColor": "#009900",
+  "navigationBarTextStyle": "black",
+  "navigationBarTitleText": "37-自定义组件的初体验",
+  "backgroundColor": "#eeeeee",
+  "backgroundTextStyle": "dark"
+}

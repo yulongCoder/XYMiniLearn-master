@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+    "Tabs": "components/Tabs/Tabs"
+  },
+  "navigationBarBackgroundColor": "#009900",
+  "navigationBarTextStyle": "black",
+  "navigationBarTitleText": "39-自定义组件-标题激活选中",
+  "backgroundColor": "#eeeeee",
+  "backgroundTextStyle": "dark"
+}

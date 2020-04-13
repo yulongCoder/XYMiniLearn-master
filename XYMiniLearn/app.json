@@ -1,7 +1,6 @@
 {
   "pages":[
-    "pages/35-checkbox复选框/35",
-
+    "pages/43-组件的其他属性/43",
     
     "pages/13-数据绑定/13",
     "pages/14-运算/14",
@@ -24,6 +23,13 @@
     "pages/32-button的开放能力2/32",
     "pages/33-icon图标/33",
     "pages/34-radio单选框/34",
+    "pages/35-checkbox复选框/35",
+    "pages/37-自定义组件的初体验/37",
+    "pages/38-自定义组件-Tabs-样式优化/38",
+    "pages/39-自定义组件-标题激活选中/39",
+    "pages/40-自定义组件-父向子传递数据/40",
+    "pages/41-自定义组件-子向父传递数据/41",
+    "pages/42-自定义组件-slot/42",
     
 
     "pages/index/index",
