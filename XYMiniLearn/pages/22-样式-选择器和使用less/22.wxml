@@ -1,0 +1,10 @@
+<!--pages/22-样式-选择器和使用less/21.wxml-->
+<text>pages/22-样式-选择器和使用less/21.wxml</text>
+
+<view>
+  <view class="v1">
+    <text>444</text>
+  </view>
+</view>
+
+<view>哈哈哈哈</view>
