@@ -1,0 +1,9 @@
+view {
+  background-color: yellow;
+}
+
+image {
+  width: 200px;
+  height: 300px;
+  border: 2px solid red;
+}
