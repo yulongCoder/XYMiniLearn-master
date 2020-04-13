@@ -1,7 +1,9 @@
 swiper {
   width: 100%;
-  height: calc(100vw * 353 / 1125);
+  height: calc(100vw * 352 / 1125);
   border: 1px solid red;
+
+  box-sizing: border-box;
 }
 
 image {
