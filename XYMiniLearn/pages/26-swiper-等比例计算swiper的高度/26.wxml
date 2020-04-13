@@ -1,0 +1,34 @@
+<view>26</view>
+
+<!-- 
+  1 轮播外层容器 swiper
+  2 每一个轮播项 swiper-item
+  3 swiper 标签，存在默认样式
+    width 100% height 150px .这个是swiper默认的宽度和高度
+    而image的默认宽度和高度是 320px * 240px.
+
+    swiper的高度无法实现由内容撑开。
+
+  4 先找出原图的宽度和高度，等比例给 swiper 设定宽度和高度
+    原图的高度和宽度是 1125 × 352
+    计算公式：swiper宽度/swiper高度 == 原图的宽度/原图的高度
+
+swiper高度 == (swiper宽度)/ (原图的宽度/原图的高度)
+swiper高度 == (100vw)/ (1125 / 352)
+
+100vw 都是说百分百的屏幕的宽度。
+
+ -->
+<swiper>
+	<swiper-item>
+		<image mode="widthFix" src="//gw.alicdn.com/imgextra/i1/47/O1CN01IC2Tbe1CDZCvagPel_!!47-0-lubanu.jpg" lazy-load></image>
+	</swiper-item>
+
+	<swiper-item>
+		<image mode="widthFix" src="//gw.alicdn.com/imgextra/i2/150/O1CN01UA6QnR1Cyk07Op6oT_!!150-0-lubanu.jpg" lazy-load></image>
+	</swiper-item>
+
+	<swiper-item>
+		<image mode="widthFix" src="//gw.alicdn.com/imgextra/i2/129/O1CN01vlr8gV1Cp7gXmfLQO_!!129-0-lubanu.jpg" lazy-load></image>
+	</swiper-item>
+</swiper>
