@@ -1,6 +1,7 @@
 {
   "pages":[
-    "pages/45-页面生命周期/45",
+    "pages/29-rich-text富文本标签/29",
+    
     
     "pages/13-数据绑定/13",
     "pages/14-运算/14",
@@ -17,7 +18,7 @@
     "pages/26-swiper-等比例计算swiper的高度/26",
     "pages/27-swiper-常见属性/27",
     "pages/28-navigator导航标签/28",
-    "pages/29-rich-text富文本标签/29",
+    
     "pages/30-button-外观样式/30",
     "pages/31-button的开放能力1/31",
     "pages/32-button的开放能力2/32",
@@ -31,6 +32,7 @@
     "pages/41-自定义组件-子向父传递数据/41",
     "pages/42-自定义组件-slot/42",
     "pages/43-组件的其他属性/43",
+    "pages/45-页面生命周期/45",
 
 
     "pages/index/index",

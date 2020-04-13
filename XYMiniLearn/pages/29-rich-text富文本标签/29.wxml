@@ -5,14 +5,14 @@
     接收对象数组
  -->
 
-
+<view>-----接收对象数组，不是很直观，不常用-----</view>
 <!-- 
   接收对象数组
   不是很直观，不常用
  -->
- <rich-text nodes="{{htmlArray}}"></rich-text>
+ <rich-text nodes="{{nodes}}" bindtap="handleRichTap"></rich-text>
 
-<view>-----------------</view>
+<view>--------下面是加载html富文本---------</view>
  <!-- 
    接收标签字符串
    直观的，常用的
