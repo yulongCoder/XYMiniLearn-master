@@ -1,9 +1,10 @@
 {
-  "pages":[
-    "pages/26-swiper-等比例计算swiper的高度/26",
-    
-    
-    
+  "pages": [
+    "pages/09-全局配置文件-tabbar字段/index/index",
+    "pages/09-全局配置文件-tabbar字段/category/category",
+    "pages/09-全局配置文件-tabbar字段/shoppingcart/shoppingcart",
+    "pages/09-全局配置文件-tabbar字段/mine/mine",
+
     "pages/13-数据绑定/13",
     "pages/14-运算/14",
     "pages/15-数组和对象循环/15",
@@ -16,7 +17,7 @@
     "pages/22-样式-选择器和使用less/22",
     "pages/24-view和text标签/24",
     "pages/25-image图片标签/25",
-    
+    "pages/26-swiper-等比例计算swiper的高度/26",
     "pages/27-swiper-常见属性/27",
     "pages/28-navigator导航标签/28",
     "pages/29-rich-text富文本标签/29",
@@ -34,16 +35,46 @@
     "pages/42-自定义组件-slot/42",
     "pages/43-组件的其他属性/43",
     "pages/45-页面生命周期/45",
-
-
     "pages/index/index",
     "pages/logs/logs"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/09-全局配置文件-tabbar字段/index/index",
+        "text": "首页",
+        "iconPath": "icons/home.png",
+        "selectedIconPath": "icons/home_clone.png"
+      },
+      {
+        "pagePath": "pages/09-全局配置文件-tabbar字段/category/category",
+        "text": "分类",
+        "iconPath": "icons/category.png",
+        "selectedIconPath": "icons/category_clone.png"
+      },
+      {
+        "pagePath": "pages/09-全局配置文件-tabbar字段/shoppingcart/shoppingcart",
+        "text": "购物车",
+        "iconPath": "icons/cart.png",
+        "selectedIconPath": "icons/cart_clone.png"
+      },
+      {
+        "pagePath": "pages/09-全局配置文件-tabbar字段/mine/mine",
+        "text": "我的",
+        "iconPath": "icons/my.png",
+        "selectedIconPath": "icons/my_clone.png"
+      }
+    ],
+    "color": "#0094ff",
+    "selectedColor": "#ff9400",
+    "backgroundColor": "#00ff00",
+    "position": "bottom"
+  },
+  "window": {
+    "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle":"black"
+    "navigationBarTextStyle": "black"
   },
   "style": "v2",
   "sitemapLocation": "sitemap.json"
