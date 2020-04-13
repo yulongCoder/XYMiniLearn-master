@@ -1,0 +1,43 @@
+<!-- 
+  11 条件渲染
+  11.1 wx:if="{{true/false}}"
+  11.2 wx:if
+    wx:elif
+    wx:else
+
+  11.3 hidden
+    在标签上直接加入属性 hidden
+    hidden="{{true}}"
+  11.4 什么场景下使用哪个
+    当标签不是频繁的切换显示，优先使用 wx:if
+    直接把标签从页面结构中移除掉。
+
+    当标签频繁的切换显示时，优先使用 hidden
+    通过添加样式的方式来切换显示，display:none
+    所以这个hidden 和 display 不要一起使用。
+ -->
+
+<view>
+	<view>条件渲染</view>
+	<view wx:if="{{true}}">显示</view>
+	<view wx:if="{{false}}">不显示</view>
+	<view>--------------------------------</view>
+
+	<view wx:if="{{false}}">11</view>
+	<view wx:elif="{{true}}">22</view>
+	<view wx:else>33</view>
+
+	<view>--------------------------------</view>
+	<view>条件渲染 hidden 属性</view>
+	<view hidden>不显示</view>
+	<view hidden="{{false}}">false 显示, true 不显示</view>
+
+	<view>--------------------------------</view>
+
+	<!-- 
+  所以这个hidden 和 display 不要一起使用。
+  display: flex; 覆盖了 hidden 属性
+ -->
+	<view hidden="{{true}}" style="display: flex;">hhhhhhhhhhh</view>
+
+</view>

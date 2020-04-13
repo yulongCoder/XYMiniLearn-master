@@ -1,11 +1,12 @@
 {
   "pages":[
-    "pages/16-block标签的使用/16",
+    "pages/17-条件渲染/17",
     
 
     "pages/13-数据绑定/13",
     "pages/14-运算/14",
     "pages/15-数组和对象循环/15",
+    "pages/16-block标签的使用/16",
 
     "pages/index/index",
     "pages/logs/logs"
