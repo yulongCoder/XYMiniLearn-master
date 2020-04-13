@@ -21,10 +21,8 @@
   9.1 wx:for="{{对象}}" wx:for-item="对象的值" wx:for-index="对象的属性"
   9.2 循环对象的时候，最好把 item 和 index 的名称都修改一下，名称易读
       wx:for="{{对象}}" wx:for-item="value" wx:for-index="key"
-
-
  -->
-	<view>-----分割线-----</view>
+	<view>-------------------------------</view>
 	<view>数组循环</view>
 	<view wx:for="{{list}}" wx:for-item="item" wx:for-index="index" wx:key="id">
 		索引==={{index}},
@@ -34,9 +32,11 @@
 </view>
 
 <view>-------------------------------</view>
-
+<!-- 
+	省略 index 和 item，会默认给这两个参数
+	因为有默认参数 index 和 item 。
+-->
 <view wx:for="{{list}}" wx:key="id">
-	<!-- 因为有默认参数 index 和 item -->
 	索引==={{index}},
 	值==={{item.name}},
 	id==={{item.id}}
@@ -45,17 +45,17 @@
 <view>-------------------------------</view>
 <!-- 9.1 wx:for="{{对象}}" wx:for-item="对象的值" wx:for-index="对象的属性" -->
 <view>
-	<view>-----分割线-----</view>
 	<view>对象循环</view>
-	<view wx:for="{{person}}" wx:key="age">
-		属性=={{index}},
-		值=={{item}}
-	</view>
-
 	<view>-------------------------------</view>
 	<view wx:for="{{person}}" wx:for-item="value" wx:for-index="key" wx:key="age">
 		属性=={{key}},
 		值=={{value}}
+	</view>
+
+	<!-- 省略 value 和 key -->
+	<view wx:for="{{person}}" wx:key="age">
+		属性=={{index}},
+		值=={{item}}
 	</view>
 
 </view>
