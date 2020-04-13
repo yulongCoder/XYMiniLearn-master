@@ -3,8 +3,12 @@
 <view>---------------------</view>
 
 <!-- 
-size 控制按钮的大小
-size 的合法值：default mini
+1 size 控制按钮的大小
+  size 的合法值：default mini
+2 type有：
+    default 背景灰色，文字绿色
+    primary 背景绿色，文字白色
+    warn 背景灰色，文字红色
  -->
 <button>按钮</button>
 <button size="default">按钮</button>
