@@ -5,8 +5,8 @@
 
   8.2 wx:key="唯一的值", 用来提高列表渲染的性能
       8.2.1 wx:key 绑定一个普通字符串的时候，那么这个字符串的名称是数组中的对象的唯一属性
-      8.2.2 wx:key = "*this" 表示你的数组是一个普通的数组，*this表示循环项
-        [1,2,4,55, 44]
+      8.2.2 wx:key = "*this" 表示你的数组是一个普通的数组，*this表示循环项，比如下面的数组就可以
+        [1, 2, 4, 55, 44]
         ["1", "222", "addad"]
   8.3 当出现数组的嵌套循环的时候，要注意 wx:for-item="item" wx:for-index="index"
     绑定的名称不要重名，
@@ -19,9 +19,9 @@
   9.2 循环对象的时候，最好把 item 和 index 的名称都修改一下，名称易读
       wx:for="{{对象}}" wx:for-item="value" wx:for-index="key"
  -->
-	
-	
-	
+
+
+
 	<view>----------------1---------------</view>
 
 	<!-- 8.1 wx:for="{{数组或者对象}}" wx:for-item="循环项的名称" wx:for-index="循环项的索引" 
@@ -35,11 +35,14 @@
 	</view>
 
 	<view>----------------2---------------</view>
-		<view wx:for="{{list}}" wx:for-item="item" wx:for-index="index" wx:key="*this">
+	<!-- 
+		8.2.2 wx:key = "*this" 表示你的数组是一个普通的数组，*this表示循环项，比如下面的数组就可以
+        [1, 2, 4, 55, 44]
+        ["1", "222", "addad"]
+		-->
+	<view wx:for="{{array}}" wx:for-item="item" wx:for-index="index" wx:key="*this">
 		索引==={{index}},
-		值==={{item.name}},
-		id==={{item.id}},
-		this===={{this}}
+		item==={{item}}
 	</view>
 </view>
 

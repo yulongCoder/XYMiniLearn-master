@@ -9,13 +9,14 @@ Page({
     list: [{
       id: 0,
       name: "猪八戒"
-    },{
+    }, {
       id: 1,
       name: "天蓬元帅"
-    },{
+    }, {
       id: 2,
       name: "悟能"
     }],
+    array: [1, 2, 4, 55, 44],
     person: {
       age: 20,
       height: 1.88,
