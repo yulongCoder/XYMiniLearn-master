@@ -1,0 +1,6 @@
+/* pages/45-页面生命周期/45.wxss */
+view{
+  background-color: yellow;
+  width: 200rpx;
+  height: 2000rpx;
+}

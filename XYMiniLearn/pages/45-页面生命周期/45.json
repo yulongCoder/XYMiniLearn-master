@@ -1,0 +1,9 @@
+{
+  "usingComponents": {},
+  "navigationBarBackgroundColor": "#009900",
+  "navigationBarTextStyle": "black",
+  "navigationBarTitleText": "45-页面生命周期",
+  "backgroundColor": "#eeeeee",
+  "backgroundTextStyle": "dark",
+  "pageOrientation": "auto"
+}
