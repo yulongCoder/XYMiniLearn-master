@@ -1,6 +1,6 @@
 {
   "pages":[
-    "pages/19-事件绑定2/19",
+    "pages/20-样式-rpx/20",
     
 
     "pages/13-数据绑定/13",
@@ -9,6 +9,7 @@
     "pages/16-block标签的使用/16",
     "pages/17-条件渲染/17",
     "pages/18-事件绑定1/18",
+    "pages/19-事件绑定2/19",
 
     "pages/index/index",
     "pages/logs/logs"
