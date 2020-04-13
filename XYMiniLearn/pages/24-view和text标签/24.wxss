@@ -1,0 +1,9 @@
+view {
+  background-color: yellow;
+}
+
+/* css */
+.wsui-btn__hover_list {
+    opacity: 0.9;
+    background: #f7f7f7;
+}

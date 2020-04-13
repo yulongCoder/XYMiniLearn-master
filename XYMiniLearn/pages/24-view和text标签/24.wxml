@@ -1,0 +1,41 @@
+
+<!--  
+  指定按下去的样式类。当 hover-class="none" 时，没有点击态效果
+
+  hover-stop-propagation	boolean	false	否	指定是否阻止本节点的祖先节点出现点击态	1.5.0
+  hover-start-time	number	50	否	按住后多久出现点击态，单位毫秒	1.0.0
+  hover-stay-time	number	400	否	手指松开后点击态保留时间，单位毫秒	1.0.0
+-->
+<view hover-class="wsui-btn__hover_list" hover-start-time="50" hover-stay-time="400">24</view>
+
+<view>---------------------------------</view>
+
+<!-- 
+  MARK: 除了文本节点以外的其他节点都无法长按选中。
+  出现复制粘贴
+
+tip: decode可以解析的有 &nbsp; &lt; &gt; &amp; &apos; &ensp; &emsp;
+tip: 各个操作系统的空格标准并不一致。
+tip:text 组件内只支持 text 嵌套。
+tip: 除了文本节点以外的其他节点都无法长按选中。
+bug: 基础库版本低于 2.1.0 时， text 组件内嵌的 text style 设置可能不会生效。
+
+  属性	类型	默认值	必填	说明	最低版本
+  selectable	boolean	false	否	文本是否可选	1.1.0
+  长按后可以选中复制等
+
+  space	string		否	显示连续空格	1.4.0
+  decode	boolean	false	否	是否解码
+ -->
+<text selectable="true">
+我是文本
+</text>
+
+
+<text selectable>
+我是文本==&nbsp;==我不要解码
+</text>
+
+<text selectable decode>
+我是文本&emsp;==&nbsp;==&lt;我要解码
+</text>

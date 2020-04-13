@@ -1,6 +1,6 @@
 {
   "pages":[
-    "pages/22-样式-选择器和使用less/22",
+    "pages/24-view和text标签/24",
     
 
     "pages/13-数据绑定/13",
@@ -12,6 +12,7 @@
     "pages/19-事件绑定2/19",
     "pages/20-样式-rpx/20",
     "pages/21-样式-导入/21",
+    "pages/22-样式-选择器和使用less/22",
 
     "pages/index/index",
     "pages/logs/logs"
