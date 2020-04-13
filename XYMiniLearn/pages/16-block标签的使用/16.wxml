@@ -1,0 +1,18 @@
+<!-- 
+	10 block
+     占位符的标签
+     写代码的时候可以看到这个标签存在
+     页面渲染，小程序会把它移除掉 
+-->
+
+<view>1-------------------------------</view>
+<block wx:for="{{person}}" wx:for-item="value" wx:for-index="key" wx:key="age">
+	属性=={{key}},     
+	值=={{value}} -----
+</block>
+
+<view>2-------------------------------</view>
+<view wx:for="{{person}}" wx:for-item="value" wx:for-index="key" wx:key="age">
+	属性=={{key}},
+	值=={{value}}
+</view>
